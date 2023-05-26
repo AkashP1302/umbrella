@@ -1,0 +1,106 @@
+body {
+  font-family: Poppins; /* Set the font family for the body */
+}
+
+.container {
+  display: flex; /* Use flexbox for the container */
+  flex-direction: row; /* Arrange items in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  height: 90vh; /* Set the height of the container */
+}
+
+h1 {
+  font-size: 35px; /* Set the font size for h1 */
+  color: rgb(41, 41, 41); /* Set the text color for h1 */
+}
+
+h3 {
+  font-size: 15px; /* Set the font size for h3 */
+  color: rgb(41, 41, 41); /* Set the text color for h3 */
+}
+
+.box1 {
+  display: flex; /* Use flexbox for the box1 */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 30px; /* Set the padding for box1 */
+  margin-right: 70px; /* Set the right margin for box1 */
+  margin-top: 70px; /* Set the top margin for box1 */
+}
+
+.btnContainer {
+  display: flex; /* Use flexbox for the button container */
+  flex-direction: row; /* Arrange buttons in a row */
+}
+
+.color-swatch {
+  width: 30px; /* Set the width for the color swatch */
+  height: 30px; /* Set the height for the color swatch */
+  margin-right: 10px; /* Set the right margin for the color swatch */
+  border-radius: 50%; /* Make the color swatch circular */
+  border: none; /* Remove the border from the color swatch */
+  cursor: pointer; /* Set the cursor to indicate interactivity */
+}
+
+.btnStyle {
+  width: 100%; /* Set the width for the button */
+  height: 30px; /* Set the height for the button */
+  display: flex; /* Use flexbox for the button */
+  align-items: center; /* Center items vertically in the button */
+  border: none; /* Remove the border from the button */
+  background-color: #088cfff3; /* Set the background color for the button */
+  padding: 10px; /* Set the padding for the button */
+}
+
+#buttonContainer {
+  display: flex; /* Use flexbox for the button container */
+  flex-direction: row; /* Arrange buttons in a row */
+}
+
+.btnImg {
+  float: left; /* Float the image to the left */
+  margin-right: 30%; /* Set the right margin for the image */
+  border: none; /* Remove the border from the image */
+}
+
+.logo {
+  position: absolute; /* Position the logo absolutely */
+  left: 34%; /* Set the left position for the logo */
+  top: 74%; /* Set the top position for the logo */
+  transform: translate(-50%, -50%); /* Center the logo */
+  width: 50px; /* Set the width for the logo */
+  height: 50px; /* Set the height for the logo */
+}
+
+.loader {
+  width: 50px; /* Set the width for the loader */
+  height: 50px; /* Set the height for the loader */
+  background-image: url('images/loader_icon.svg'); /* Set the background image for the loader */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: contain; /* Scale the background image to fit */
+  background-position: center; /* Center the background image */
+  animation: spin 2s linear infinite; /* Apply rotation animation to the loader */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Set the initial rotation angle */
+  }
+  100% {
+    transform: rotate(360deg); /* Set the final rotation angle */
+  }
+}
+
+/* Media query for screens with a maximum width of 850px or less */
+@media screen and (max-width: 850px) {
+  .container {
+    flex-direction: column; /* Arrange items in a column */
+    margin-top: 100px; /* Set the top margin for the container */
+    margin-bottom: 50px; /* Set the bottom margin for the container */
+  }
+  .logo {
+    left: 45%; /* Adjust the left position for the logo */
+    top: 65%; /* Adjust the top position for the logo */
+  }
+}
